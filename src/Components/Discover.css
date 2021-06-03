@@ -1,0 +1,239 @@
+@font-face{
+    font-family:'Gilroy-SemiBold';
+    src:url('../fonts/Gilroy-SemiBold.ttf') format('truetype');   
+}
+
+@font-face{
+    font-family:'Gilroy-ExtraBold';
+    src:url('../fonts/Gilroy-ExtraBold.otf') format('truetype');   
+}
+
+.component1{
+    position:relative;
+    overflow:hidden;
+    border:1px solid solid;   
+    display:grid;
+    justify-content:center;
+    height:35vh;
+    border-radius: 20px;
+    box-shadow: inset 0px -20px 10px 5px rgba(0,0,0,0.6);
+}
+
+@media only screen and (max-width: 738px) {
+    .footerw{
+        width:100vw;
+    }
+     
+
+    .component1{
+        position:relative;
+        overflow:hidden;
+        border:1px solid solid;   
+        display:grid;
+        height: 45vh;
+        width:90vw;
+        justify-content:center;
+        border-radius: 20px;
+        margin-left: 8px;
+    }
+
+    .component2{
+        position:relative;
+        height:35vh;
+        width:40vw;
+        border:1px solid #bababf;
+        display:grid;
+        justify-content:center;
+        border-radius: 20px;    
+        box-shadow: inset 20px 0px 20px 100px rgba(0,0,0,0.4);
+    }
+
+    .img2{
+        position: relative;
+        z-index: -2;
+        height:35vh;
+        width:40vw;    
+        border-radius: 20px;     
+        filter: blur(20.1828px);
+    }
+
+    #text1{
+        position: absolute;
+        bottom: 1rem;
+        color:white;    
+        font-family: 'Gilroy-ExtraBold';
+        font-size: 1.4rem;
+        font-weight: bolder;   
+        margin-left: 4rem;
+    }
+    
+    #text2{
+        position: absolute;
+        bottom: 0px;
+        color:white;
+        font-family: 'Gilroy-SemiBold';
+        font-size: 1rem;
+        font-weight: 30px;
+        margin-left: 4rem;
+    }
+}
+
+@media (min-width: 739px) and (max-width: 1200px){
+    .footerw{
+        width:90vw;
+    }
+
+    
+        .component2{
+            position:relative;
+            height:35vh;
+            width:40vw;
+            border:1px solid #bababf;
+            display:grid;
+            justify-content:center;
+            border-radius: 20px;    
+            box-shadow: inset 0px -20px 10px 5px rgba(0,0,0,0.6);
+        }
+    
+        .img2{
+            position: relative;
+            z-index: -2;
+            height:35vh;
+            width:40vw;    
+            border-radius: 20px;     
+            filter: blur(27.1828px);
+        }
+}
+
+
+@media only screen and (min-width: 1201px) {
+    
+
+    .component2{
+    position:relative;
+    height:30vh;
+    width:13vw;
+    border:1px solid grey;
+    border-radius: 20px;    
+    box-shadow: inset 0px 0px 40px 2px rgba(0,0,0,0.6);
+}
+
+.img2{
+    position: relative;
+    z-index: -2;
+    height:30vh;
+    width:13vw;    
+    border-radius: 20px;     
+    filter: blur(27.1828px);
+ 
+}
+    
+.footerw{    
+    width:70vw;
+}
+}
+
+
+
+.img1{
+    z-index: -1; 
+    border-radius: 20px;
+    position: relative;
+    z-index: -2;
+           
+}
+
+#text1{
+    position: absolute;
+    bottom: 0.6rem;
+    color:white;    
+    font-family: 'Gilroy-ExtraBold';
+    font-size: 1.6rem;
+    font-weight: bolder;   
+    margin-left: 1rem;
+}
+
+#text_1{
+    position: absolute;
+    bottom: 1rem;
+    color:white;    
+    font-family: 'Gilroy-ExtraBold';
+    font-size: 1.4rem;
+    font-weight: bolder;   
+    margin-left: 1rem;
+}
+
+#text2{
+    position: absolute;
+    bottom: -5px;
+    color:white;
+    font-family: 'Gilroy-SemiBold';
+    font-size: 1rem;
+    font-weight: 30px;
+    margin-left: 1rem;
+}
+
+/* #component12{
+    margin-left: 20px;
+} */
+
+
+.font11{
+   font-family:'Gilroy-ExtraBold';
+   font-size: 1.7rem;
+}
+
+.font12{
+    font-family:'Gilroy-SemiBold';
+    font-size: 1.2rem;
+}
+
+#font13{
+    font-family:'Gilroy-ExtraBold';
+    font-size: 1.4rem;    
+}
+
+#font14{
+    font-family:'Gilroy-SemiBold';
+    font-size: 1rem;
+    color:gray;    
+}
+
+.upper{
+    height:90vh;
+    /* overflow:auto; */
+}
+
+
+
+.main{
+  overflow:auto;  
+}
+
+.footer{
+    height:7vh;
+    position:fixed;
+    background-color:white;
+}
+
+.imgfooter{
+    height:3vh;    
+}
+
+.footElement{
+    display:grid;
+    align-items:center;
+    padding: 1%; 
+}
+
+.footElement:hover{
+    background-color:#d7d9db;    
+}
+
+.footElement:active{
+    background-color:#b1b3b5;    
+}
+
+.font2{
+    font-size:0.8rem;    
+}

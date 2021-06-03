@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+.element{
+    margin-top:15%;
+}
+
+.f1{
+    font-family: 'Inter', sans-serif;
+    font-size:1.2rem;
+    font-weight:500;
+}
+
+.f2{
+    font-family: 'Inter', sans-serif;
+    font-size:2rem;
+    font-weight: 800;    
+}
+
+.f3{
+    font-family: 'Inter', sans-serif;
+    font-size:1.4rem;
+    font-weight: bold;
+
+}
+
+.edit{
+    margin-left: 20px;   
+}
+.edit:hover{
+    border: 1px solid black;      
+}
