@@ -52,9 +52,9 @@ export default function Discover(){
                <p className="text-center font11">Notes</p>
                <p className="text-center font12">Personal messages to you</p> 
              {
-               showImages.map((e)=>{ 
+               showImages.map((e,i)=>{ 
                return(  
-             <div className="offset-lg-4 col-lg-4 " >
+             <div className="offset-lg-4 col-lg-4" key={i}>
                    <div className="component1">
                     <div>   
                    <img className="img1" src={e.photos.filter(e=> e.status==="avatar")[0].photo}  /> 
@@ -81,9 +81,9 @@ export default function Discover(){
 
              <div className=" offset-lg-3 col-lg-6  d-flex justify-content-evenly ">
 
-               { hiddenImages.map((e)=>{ 
+               { hiddenImages.map((e,i)=>{ 
                    return(
-                 <div >
+                 <div  key={i}>
                      <div className="component2">
                      <div>    
                      <img className="img2" src={e.avatar}/>
