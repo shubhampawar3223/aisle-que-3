@@ -21,7 +21,7 @@
 
 @media only screen and (max-width: 738px) {
     .footerw{
-        width:100vw;
+        width:95vw;
     }
      
 
@@ -236,4 +236,20 @@
 
 .font2{
     font-size:0.8rem;    
+}
+
+.innerComponent{
+     position: relative;  
+}
+
+.ele2{   
+  font-family:'Gilroy-SemiBold';  
+  font-size: 0.7rem; 
+  position: absolute;
+  top: -8px;
+  right: -15px;
+  padding: 1px 6px;
+  border-radius: 50%;
+  background-color: #6977f5;
+  color: white;
 }

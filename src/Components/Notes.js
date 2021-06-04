@@ -3,12 +3,13 @@ import discover_1 from '../images/discover_1.png';
 import matches_1 from '../images/matches_1.png';
 import notes_1 from '../images/notes_1.png';
 import profile_1 from '../images/profile_1.png';
-import "./Discover.css";
+import "./Notes.css";
 
 export default function Discover(){
     const [loading,setLoading] = useState(0);
     const [showImages,setShowImages] = useState([]);
     const [hiddenImages,setHiddenImages] = useState([]);
+    const [notes,setNotes] = useState(9);
     
 //here useEffect()/componentDidMount lifecycle method is used to fetch data using API call and also for states updating purpose. 
     useEffect(async()=>{
@@ -103,28 +104,30 @@ export default function Discover(){
                   <div className="d-flex justify-content-center mt-2">    
                   <img className="imgfooter" src={discover_1}/>
                   </div> 
-                  <p className="font2">Discover</p>
+                  <p className="font2 text-center">Discover</p>
                   </div>
  
                   <div className="footElement ">
-                  <div className="d-flex justify-content-center mt-2">    
+                  <div className="d-flex justify-content-center mt-2 innerComponent ">    
                   <img className="imgfooter" src={notes_1}/>
+                  <span className="ele2">{notes}</span>
                   </div> 
-                  <p className="font2">Discover</p>
+                  <p className="font2 text-center">Notes</p>
                   </div>
  
                   <div className="footElement">
-                  <div className="d-flex justify-content-center mt-2">    
+                  <div className="d-flex justify-content-center mt-2 innerComponent">    
                   <img className="imgfooter" src={matches_1}/>
+                  <span className="ele2">50+</span>
                   </div> 
-                  <p className="font2">Discover</p>
+                  <p className="font2 text-center">matches</p>
                   </div>
  
                   <div className="footElement">
                   <div className="d-flex justify-content-center mt-2">    
                   <img className="imgfooter" src={profile_1}/>
                   </div> 
-                  <p className="font2">Discover</p>
+                  <p className="font2 text-center">Profile</p>
                   </div>
                   
              </div>

@@ -83,7 +83,7 @@ export default function Discover(){
             let response = await resp.json();
             if(response.token !== null){
                 localStorage.setItem("Authorization",response.token);
-                history.push('/discover');        
+                history.push('/notes');        
             }
             else{
                 alert("Incorrect OTP");

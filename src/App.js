@@ -1,7 +1,7 @@
 import React from 'react';
 import {BrowserRouter as Router ,Route,Switch,Redirect} from 'react-router-dom';
 import Login from './Components/Login';
-import Discover from './Components/Discover';
+import Notes from './Components/Notes';
 
 const ProtectedRoute = ({component:Component,...restProps}) => {
   return(
@@ -29,7 +29,7 @@ function App() {
     <Router>
       <Switch>
           <Route exact path="/" component={Login}/>    
-          <ProtectedRoute exact path="/discover" component={Discover}/>   
+          <ProtectedRoute exact path="/notes" component={Notes}/>   
       </Switch>
     </Router>
   );
